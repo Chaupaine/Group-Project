@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class BasicPlayerController : MonoBehaviour {
 
-	public float speed;
+	public float speed = 1000f;
     public GameObject PlayerCamera;
     public bool isGrounded;
     public Vector3 movementVector;
     private Rigidbody rb;
-    public Vector3 jump;
+    public Vector3 jump = new Vector3(0,4,0);
     public float jumpForce = 2.0f;
     
     void Start()

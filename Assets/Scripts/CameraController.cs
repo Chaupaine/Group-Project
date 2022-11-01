@@ -8,7 +8,7 @@ public class CameraController : MonoBehaviour {
     public GameObject cameraTarget;
 
     [SerializeField]
-    private float mouseSensitivity = 5.0f;
+    private float mouseSensitivity = 25.0f;
 
     private float rotationY;
     private float rotationX;

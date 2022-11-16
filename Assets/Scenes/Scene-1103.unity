@@ -2946,6 +2946,7 @@ MonoBehaviour:
   movementVector: {x: 0, y: 0, z: 0}
   jump: {x: 0, y: 4, z: 0}
   jumpForce: 2
+  jumpSound: {fileID: 8300000, guid: 9be84072330e54349a899cb6c1607588, type: 3}
 --- !u!1 &2078052844
 GameObject:
   m_ObjectHideFlags: 0

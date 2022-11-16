@@ -1070,8 +1070,6 @@ MonoBehaviour:
   ySpeed: 25
   yMinLimit: -20
   yMaxLimit: 80
-  x: 0
-  y: 0
   invert: 0
 --- !u!81 &286713217
 AudioListener:
@@ -3681,7 +3679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e5fb40837bbcd7448e8a744105ec2c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  threshold: -50
+  threshold: -25
 --- !u!54 &1112611794
 Rigidbody:
   m_ObjectHideFlags: 0

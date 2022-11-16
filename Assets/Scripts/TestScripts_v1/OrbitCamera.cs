@@ -29,7 +29,7 @@ public class OrbitCamera : MonoBehaviour
         y -= Input.GetAxis("Mouse Y") * ySpeed;
         y = ClampAngle(y, yMinLimit, yMaxLimit);
         Quaternion rotation = Quaternion.Euler(y, x, 0);
-        Vector3 position = rotation * new Vector3(0.0f, 4.0f, -distance) + target.position;
+        Vector3 position = rotation * new Vector3(0.0f, 0.0f, -distance) + target.position;
         transform.rotation = rotation;
         transform.position = position;
     }

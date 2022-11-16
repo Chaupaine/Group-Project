@@ -5,13 +5,13 @@ using UnityEngine;
 public class OrbitCamera : MonoBehaviour
 {
     public Transform target;
-    public float distance;
-    public float xSpeed;
-    public float ySpeed;
-    public float yMinLimit;
-    public float yMaxLimit;
-    public float x;
-    public float y;
+    public float distance = 10;
+    public float xSpeed = 25;
+    public float ySpeed = 25;
+    public float yMinLimit = -20;
+    public float yMaxLimit = 80;
+    private float x;
+    private float y;
     public bool invert;
     
     void Start()

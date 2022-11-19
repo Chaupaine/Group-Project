@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Reset : MonoBehaviour
 {
-    public float threshold = -25f;
+    public float threshold = -30f;
     // Script for when ball falls out the map, basically resets the scene if ball falls past the threshold (Y position)
     void Update()
     {

@@ -8,11 +8,13 @@ public class Reset : MonoBehaviour
     public float threshold = -50f;
     public GameObject player;
     public GameObject explosionParticles;
+    public Animator animator;
     // Script for when ball falls out the map, basically resets the scene if ball falls past the threshold (Y position)
     void Update()
     {
         if (transform.position.y < threshold)
         {
+            animator.SetTrigger("FadeOut");
             //play the explosion particles and make player null
             DoDelayAction(5f);
         }

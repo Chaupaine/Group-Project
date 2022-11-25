@@ -13,6 +13,9 @@ public class OrbitCamera : MonoBehaviour
     public float x;
     public float y;
     public bool invert;
+
+    public PauseMenu pauseMenu;
+
     
     void Start()
     {
@@ -40,5 +43,19 @@ public class OrbitCamera : MonoBehaviour
         if (angle > 360F)
             angle -= 360F;
         return Mathf.Clamp(angle, min, max);
+    }
+    void Update() 
+    {
+        //if pausemenu isPaused is true, then set xSpeed and ySpeed to 0, otherwise keep the speeds to what they were
+        if (pauseMenu.isPaused == true)
+        {
+            xSpeed = 0;
+            ySpeed = 0;
+        }
+        else
+        {
+            xSpeed = 25;
+            ySpeed = 25;
+        }
     }
 }

@@ -27,8 +27,8 @@ public class PlayerController : MonoBehaviour {
         movementVector = Camera.main.transform.TransformDirection(movementVector);
 
         // only if you dont want to be able to control the ball while in midair (still testing out)
-        
-        rb.AddForce(movementVector * speed * Time.deltaTime);
+        rb.AddForce(new Vector3(movementVector.x, 0.0f, movementVector.z) * speed);
+        // rb.AddForce(movementVector * speed * Time.deltaTime);
         // if isGrounded is false and is pushing on vertical movement, then set speed to 0, otherwise keep the speed to what it was
         if (isGrounded == false && movementVertical != 0)
         {
@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour {
         }
         else
         {
-            speed = 1000;
+            speed = 2;
         }
 
         if (isGrounded)

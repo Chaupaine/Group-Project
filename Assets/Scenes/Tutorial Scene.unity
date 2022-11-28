@@ -160,8 +160,6 @@ MonoBehaviour:
   ySpeed: 25
   yMinLimit: -20
   yMaxLimit: 80
-  x: 0
-  y: 0
   invert: 0
   pauseMenu: {fileID: 1026463173}
 --- !u!81 &15744741

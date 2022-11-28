@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour {
         // if isGrounded is false and is pushing on vertical movement, then set speed to 0, otherwise keep the speed to what it was
         if (isGrounded == false && movementVertical != 0)
         {
-            speed = 0;
+            speed = speed/2;
         }
         else
         {

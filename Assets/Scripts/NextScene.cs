@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class NextScene : MonoBehaviour
 {
+    public Animator animator;
     private int sceneIndex;
     // Start is called before the first frame update
     void Start()
@@ -14,6 +15,9 @@ public class NextScene : MonoBehaviour
 
     void OnTriggerEnter(Collider other) 
     {
+        animator.SetTrigger("FadeOut");
         SceneManager.LoadScene(sceneIndex);
     }
+
+    
 }

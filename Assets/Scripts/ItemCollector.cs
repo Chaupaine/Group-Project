@@ -5,19 +5,23 @@ using TMPro;
 
 public class ItemCollector : MonoBehaviour
 {
+    //public ParticleSystem collectParticle;
     public static ItemCollector access;
     public int coins;
-    //GameControl.control.levelC = levelCoins;
+    public ParticleSystem collectParticle;
+    public AudioClip collectSound;
+    private AudioSource playerAudio;
     [SerializeField] TextMeshProUGUI coinsText;
 
     void Start()
     {
         coins = GameControl.control.previousScore;
+        playerAudio = GetComponent<AudioSource>();
     }
 
     void Update()
     {
-        coinsText.text = "Coins: " + coins;
+        coinsText.text = "Mints: " + coins;
     
     }
 
@@ -25,13 +29,27 @@ public class ItemCollector : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Coin"))
+        if (other.gameObject.CompareTag("leaf"))
         {
+            playerAudio.PlayOneShot(collectSound, 1.0f);
+            collectParticle.Play();
             Destroy(other.gameObject);
             coins++;
             //coinsText.text = "Coins: " + GameControl.control.score;
             Debug.Log("Coins: " + coins);
         }
+
+        if (other.gameObject.CompareTag("cookie"))
+        {
+            playerAudio.PlayOneShot(collectSound, 1.0f);
+            collectParticle.Play();
+            Destroy(other.gameObject);
+            coins+=3;
+            //coinsText.text = "Coins: " + GameControl.control.score;
+            Debug.Log("Coins: " + coins);
+        }
+
+        
     }
 
 }

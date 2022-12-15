@@ -7,6 +7,7 @@ public class GhostPlatform : MonoBehaviour
     string playerTag = "Player";
     float disappearTime = 3.0f;
     Animator animator;
+    public AudioClip touchSound;
 
     bool canReset = true;
     float resetTime = 5.0f;
@@ -21,6 +22,7 @@ public class GhostPlatform : MonoBehaviour
     {
         if (collision.gameObject.tag == playerTag)
         {
+            AudioSource.PlayClipAtPoint(touchSound, transform.position);
             animator.SetBool("Trigger", true);
         }
     }

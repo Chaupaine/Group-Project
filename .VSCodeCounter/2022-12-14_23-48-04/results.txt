@@ -1,0 +1,70 @@
+Date : 2022-12-14 23:48:04
+Directory : c:\Users\Brandon Chau\Documents\GitHub\Group-Project
+Total : 35 files,  3429 codes, 107 comments, 706 blanks, all 4242 lines
+
+Languages
++-----------+------------+------------+------------+------------+------------+
+| language  | files      | code       | comment    | blank      | total      |
++-----------+------------+------------+------------+------------+------------+
+| ShaderLab |         13 |      2,015 |         61 |        557 |      2,633 |
+| JSON      |          3 |        623 |          0 |          4 |        627 |
+| C#        |         15 |        468 |         25 |         58 |        551 |
+| HLSL      |          4 |        323 |         21 |         87 |        431 |
++-----------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                            | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                               |         35 |      3,429 |        107 |        706 |      4,242 |
+| Assets                                                                                                          |         33 |      2,961 |        107 |        704 |      3,772 |
+| Assets\Scripts                                                                                                  |         15 |        468 |         25 |         58 |        551 |
+| Assets\Scripts\MenuScripts                                                                                      |          5 |        119 |          5 |         13 |        137 |
+| Assets\Scripts\TestScripts                                                                                      |          3 |        163 |          7 |         20 |        190 |
+| Assets\TextMesh Pro                                                                                             |         18 |      2,493 |         82 |        646 |      3,221 |
+| Assets\TextMesh Pro\Shaders                                                                                     |         17 |      2,338 |         82 |        644 |      3,064 |
+| Assets\TextMesh Pro\Sprites                                                                                     |          1 |        155 |          0 |          2 |        157 |
+| Packages                                                                                                        |          2 |        468 |          0 |          2 |        470 |
++-----------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------------------------------------+-----------+------------+------------+------------+------------+
+| filename                                                                                                        | language  | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------------------+-----------+------------+------------+------------+------------+
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\Scripts\Boostpad.cs                                 | C#        |         10 |          0 |          1 |         11 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\Scripts\Jumppad.cs                                  | C#        |         10 |          0 |          1 |         11 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\Scripts\LevelChanger.cs                             | C#        |         11 |          0 |          2 |         13 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\Scripts\MenuScripts\ButtonSounds.cs                 | C#        |         17 |          1 |          1 |         19 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\Scripts\MenuScripts\Destroyer.cs                    | C#        |         14 |          0 |          3 |         17 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\Scripts\MenuScripts\MainMenu.cs                     | C#        |         23 |          0 |          4 |         27 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\Scripts\MenuScripts\PauseMenu.cs                    | C#        |         49 |          1 |          3 |         53 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\Scripts\MenuScripts\Respawner.cs                    | C#        |         16 |          3 |          2 |         21 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\Scripts\NextScene.cs                                | C#        |         18 |          1 |          2 |         21 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\Scripts\OrbitCamera.cs                              | C#        |         54 |          1 |          5 |         60 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\Scripts\PlayerController.cs                         | C#        |         51 |          6 |          9 |         66 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\Scripts\Reset.cs                                    | C#        |         32 |          5 |          5 |         42 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\Scripts\TestScripts\Enemy.cs                        | C#        |         34 |          2 |          4 |         40 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\Scripts\TestScripts\GhostPlatform.cs                | C#        |         35 |          0 |          5 |         40 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\Scripts\TestScripts\IcePlatform.cs                  | C#        |         94 |          5 |         11 |        110 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader | ShaderLab |        109 |          2 |         33 |        144 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader       | ShaderLab |        112 |          3 |         31 |        146 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader              | ShaderLab |        109 |          2 |         33 |        144 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader         | ShaderLab |        243 |          4 |         71 |        318 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader             | ShaderLab |        241 |          4 |         66 |        311 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader  | ShaderLab |        188 |         10 |         50 |        248 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader  | ShaderLab |        183 |          8 |         50 |        241 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader      | ShaderLab |         82 |          4 |         21 |        107 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader          | ShaderLab |        183 |          8 |         50 |        241 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader  | ShaderLab |        103 |          8 |         28 |        139 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader         | ShaderLab |        122 |          4 |         33 |        159 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\TextMesh Pro\Shaders\TMP_SDF.shader                 | ShaderLab |        243 |          4 |         71 |        318 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\TextMesh Pro\Shaders\TMP_Sprite.shader              | ShaderLab |         97 |          0 |         20 |        117 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\TextMesh Pro\Shaders\TMPro.cginc                    | HLSL      |         63 |          2 |         20 |         85 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc             | HLSL      |        122 |          2 |         34 |        158 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc         | HLSL      |         62 |         10 |         14 |         86 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc            | HLSL      |         76 |          7 |         19 |        102 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Assets\TextMesh Pro\Sprites\EmojiOne.json                  | JSON      |        155 |          0 |          2 |        157 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Packages\manifest.json                                     | JSON      |         46 |          0 |          1 |         47 |
+| c:\Users\Brandon Chau\Documents\GitHub\Group-Project\Packages\packages-lock.json                                | JSON      |        422 |          0 |          1 |        423 |
+| Total                                                                                                           |           |      3,429 |        107 |        706 |      4,242 |
++-----------------------------------------------------------------------------------------------------------------+-----------+------------+------------+------------+------------+

@@ -25,10 +25,9 @@ public class UpAndDown : MonoBehaviour
     {
         // Calculate the new position based on the object's start position,
         // the distance to move, and a sin wave that oscillates over time.
-        float newY = startPosition.y + distance * Mathf.Sin(Time.time * speed);
+        float newY = startPosition.y + distance * (Mathf.Sin(Time.time * speed) + 1);
 
         // Update the object's position.
-        transform.position = new Vector3(transform.position.x, newY, 
-        transform.position.z);
+        transform.position = new Vector3(transform.position.x, newY, transform.position.z);
     }
 }

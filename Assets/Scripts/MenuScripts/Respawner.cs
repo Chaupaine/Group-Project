@@ -16,7 +16,5 @@ public class Respawner : MonoBehaviour
     {
         //spawn a sphere at the position of the spawner
         Instantiate(sphere, transform.position, Quaternion.identity);
-        // Instantiate(sphere, new Vector3(9, 13, 0), Quaternion.identity);
-        // Instantiate(sphere, new Vector3(Random.Range(-6, 6), 10, Random.Range(-6, 6)), Quaternion.identity);
     }
 }

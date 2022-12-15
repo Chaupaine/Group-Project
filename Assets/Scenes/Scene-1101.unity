@@ -2144,6 +2144,7 @@ MonoBehaviour:
   dirtParticles: {fileID: 246425141}
   explosionParticles: {fileID: 1146420805}
   jumpSound: {fileID: 8300000, guid: 9be84072330e54349a899cb6c1607588, type: 3}
+  decelerationSpeed: 25
 --- !u!54 &867743421
 Rigidbody:
   m_ObjectHideFlags: 0

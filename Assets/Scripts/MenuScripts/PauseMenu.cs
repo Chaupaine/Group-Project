@@ -23,19 +23,19 @@ public class PauseMenu : MonoBehaviour
     }
     public void Pause()
     {
-        pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+        pauseMenuUI.SetActive(true);
     }
     public void Resume() 
     {
-        pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
         Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked; 
+        Cursor.lockState = CursorLockMode.Locked;
+        pauseMenuUI.SetActive(false);
     }
     public void ReturnHome() 
     {

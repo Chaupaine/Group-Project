@@ -18,6 +18,4 @@ public class NextScene : MonoBehaviour
         animator.SetTrigger("FadeOut");
         SceneManager.LoadScene(sceneIndex);
     }
-
-    
 }

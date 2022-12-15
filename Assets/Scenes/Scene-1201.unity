@@ -2757,7 +2757,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2060628853751980760, guid: 102cae266ebd046de925b88a4c4f35e8, type: 3}
       propertyPath: m_Name
-      value: Cube
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 3973659582241967139, guid: 102cae266ebd046de925b88a4c4f35e8, type: 3}
       propertyPath: m_RootOrder

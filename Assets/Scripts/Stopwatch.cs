@@ -21,6 +21,11 @@ public class Stopwatch : MonoBehaviour
     void Update()
     {
         currentTime = countDown ? currentTime -= Time.deltaTime : currentTime += Time.deltaTime;
-        timerText.text = currentTime.ToString();
+        SetTimerText();
+        timerText.color = Color.red;
+    }
+
+    private void SetTimerText() {
+        timerText.text = currentTime.ToString("0.0");
     }
 }

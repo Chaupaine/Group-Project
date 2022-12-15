@@ -37,6 +37,5 @@ public class Reset : MonoBehaviour
  
         //Do the action after the delay time has finished.
         ResetScene();
-
     }
 }

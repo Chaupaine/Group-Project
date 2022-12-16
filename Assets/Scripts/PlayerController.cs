@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour {
     public ParticleSystem dirtParticles;
     public ParticleSystem explosionParticles;
     public AudioClip jumpSound;
+    public float decelerationSpeed = 25.0f;
     
     void Start()
     {
@@ -53,6 +54,20 @@ public class PlayerController : MonoBehaviour {
             }
         }
 	}
+
+    // FixedUpdate is called at a fixed interval
+    void FixedUpdate()
+    {
+        // Check if the "decelerate" button is pressed
+        if (Input.GetKey(KeyCode.M) && isGrounded)
+        {
+            // Calculate the deceleration force as a vector in the opposite direction of the player's current velocity
+            Vector3 decelerationForce = -rb.velocity.normalized * decelerationSpeed;
+
+            // Apply the deceleration force to the player's Rigidbody
+            rb.AddForce(decelerationForce);
+        }
+    }
 
     void OnCollisionStay()
     {

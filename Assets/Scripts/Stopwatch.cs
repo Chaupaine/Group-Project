@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Stopwatch : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class Stopwatch : MonoBehaviour
 
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        SceneManager.activeSceneChanged += OnActiveSceneChanged;
     }
 
     // Start is called before the first frame update
@@ -34,5 +35,11 @@ public class Stopwatch : MonoBehaviour
 
     private void SetTimerText() {
         timerText.text = "Time: " + currentTime.ToString("0.00") + " s";
+    }
+
+    private void OnActiveSceneChanged(Scene oldScene, Scene newScene)
+    {
+        float totalTime = PlayerPrefs.GetFloat("TotalTime");
+        timerText.text = "Total Time: " + totalTime.ToString("0.00") + " s";
     }
 }

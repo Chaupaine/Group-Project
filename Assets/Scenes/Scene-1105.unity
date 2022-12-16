@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.68662024, g: 0.60657054, b: 0.54535145, a: 1}
+  m_IndirectSpecularColor: {r: 0.6866656, g: 0.6066156, b: 0.54540384, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5817,7 +5817,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 1433453858}
+  totalTimerText: {fileID: 0}
   countDown: 0
+  total: 0
 --- !u!114 &1433453858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7490,7 +7492,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9d46c449f5f51354ba83bb55482398de, type: 2}
+  - {fileID: 2100000, guid: 8979ae21198944e9abaa7d6923349f5d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

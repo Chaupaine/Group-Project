@@ -22,7 +22,7 @@ public class ItemCollector : MonoBehaviour
     void Update()
     {
         coinsText.text = "Mints: " + coins;
-    
+
     }
 
 
@@ -35,8 +35,7 @@ public class ItemCollector : MonoBehaviour
             collectParticle.Play();
             Destroy(other.gameObject);
             coins++;
-            //coinsText.text = "Coins: " + GameControl.control.score;
-            Debug.Log("Coins: " + coins);
+
         }
 
         if (other.gameObject.CompareTag("cookie"))
@@ -44,12 +43,11 @@ public class ItemCollector : MonoBehaviour
             playerAudio.PlayOneShot(collectSound, 1.0f);
             collectParticle.Play();
             Destroy(other.gameObject);
-            coins+=3;
-            //coinsText.text = "Coins: " + GameControl.control.score;
-            Debug.Log("Coins: " + coins);
+            coins += 3;
+
         }
 
-        
+
     }
 
 }

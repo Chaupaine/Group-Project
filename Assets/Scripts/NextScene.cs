@@ -9,6 +9,7 @@ public class NextScene : MonoBehaviour
     public ItemCollector iC;
     public Animator animator;
     private int sceneIndex;
+    
     // Start is called before the first frame update
     void Start()
     {

@@ -9,7 +9,7 @@ public class Stopwatch : MonoBehaviour
     public TextMeshProUGUI timerText;
 
     [Header("Timer Settings")]
-    public float currentTime;
+    private float currentTime;
     public bool countDown;
     // Start is called before the first frame update
     void Start()
@@ -26,6 +26,6 @@ public class Stopwatch : MonoBehaviour
     }
 
     private void SetTimerText() {
-        timerText.text = currentTime.ToString("0.0");
+        timerText.text = "Time: " + currentTime.ToString("0.00") + " s";
     }
 }

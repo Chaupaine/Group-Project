@@ -11,10 +11,16 @@ public class Stopwatch : MonoBehaviour
     [Header("Timer Settings")]
     private float currentTime;
     public bool countDown;
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        currentTime = PlayerPrefs.GetFloat("TotalTime", 0f);
     }
 
     // Update is called once per frame
@@ -23,6 +29,7 @@ public class Stopwatch : MonoBehaviour
         currentTime = countDown ? currentTime -= Time.deltaTime : currentTime += Time.deltaTime;
         SetTimerText();
         timerText.color = Color.red;
+        PlayerPrefs.SetFloat("TotalTime", currentTime);
     }
 
     private void SetTimerText() {

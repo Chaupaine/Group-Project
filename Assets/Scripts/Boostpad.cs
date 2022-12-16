@@ -4,8 +4,14 @@ using UnityEngine;
 
 public class Boostpad : MonoBehaviour
 {
+    public AudioClip boostSound;
+
     private void OnCollisionEnter(Collision other)
     {
-        other.collider.GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward * 1000);
+        if (other.gameObject.CompareTag("Player"))
+        {
+            AudioSource.PlayClipAtPoint(boostSound, transform.position);
+            other.gameObject.GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward * 1000);
+        }
     }
 }

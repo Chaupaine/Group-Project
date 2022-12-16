@@ -933,7 +933,7 @@ MonoBehaviour:
   yMinLimit: -20
   yMaxLimit: 80
   invert: 0
-  pauseMenu: {fileID: 0}
+  pauseMenu: {fileID: 563733699}
 --- !u!81 &532164623
 AudioListener:
   m_ObjectHideFlags: 0
